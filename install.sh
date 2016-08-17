@@ -4,7 +4,7 @@
 ### variables
 dir=~/dotfiles
 olddir=~/dotfiles_old
-files="zsh_and_prezto"
+files="zaliases zexports zlogin zlogout zprezto zpreztorc zprofile zshenv zshrc"
 
 ####
 # create dotfiles_old in homedir
@@ -19,5 +19,5 @@ for file in $files; do
   echo "moving any existing dotfiles from ~ to $olddir"
   mv ~/.$file ~/dotfiles_old/
   echo "creating symlink to $file in home directory"
-  ln -s $sir/$file ~/.$file
+  ln -s $dir/.$file ~/.$file
 done
