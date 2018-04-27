@@ -20,8 +20,8 @@ zstyle ':prezto:load' pmodule \
   'directory' \
   'spectrum' \
   'utility' \
-  'ssh' \
   'completion' \
+  'ssh' \
   'homebrew' \
   'osx' \
   'ruby' \

@@ -1,19 +1,7 @@
 # Some common exports
 # Set PATH locations
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:/usr/local/opt/go/libexec/bin
+# export GOPATH=$HOME/go
+# export PATH=$PATH:$GOPATH/bin
+# export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PATH=$PATH:$HOME/bin      # Add local bin
 export PATH=/usr/local/bin:$PATH # Give /usr/local precedence over system
-
-export TWITTER_KEY='xBkQncUVlKS3LyaDXVrP9aN4n'
-export TWITTER_SECRET='47O7SANgZOaihQfQnWH4XUCElGZp1anxr3l49n1jEShOUMKpyw'
-export TWITTER_ACCESS_TOKEN='193592080-VMNvITIGFOlhVO5B9ay9tRt4hvV2tP3JQ0N3V5Z1'
-export TWITTER_ACCESS_TOKEN_SECRET='3WQCRPrgvHWTTsn1tBywloQHZvpp5M5F3EqFgiTZZJw8b'
-
-export MHV_USER_ID='1435525'
-export MHV_HOST='https://mock-prescriptions-api.herokuapp.com/'
-export MHV_BASE_URL='https://mock-prescriptions-api.herokuapp.com//mhv-api/patient/v1/'
-export MHV_APP_TOKEN='fake-app-token'
-export SSL_CERT_PATH='/Users/kam/.localhost-ssl/cert.pem'
-export SSL_KEY_PATH='/Users/kam/.localhost-ssl/key.pem'

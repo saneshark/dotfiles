@@ -13,6 +13,10 @@ export EDITOR='vi'
 export VISUAL='vi'
 export PAGER='less'
 
+# Golang
+export GOPATH=$HOME/go-workspace # don't forget to change your path correctly!
+export GOROOT=/usr/local/opt/go/libexec
+
 # Language
 if [[ -z "$LANG" ]]; then
   export LANG='en_US.UTF-8'
@@ -34,6 +38,9 @@ typeset -gU cdpath fpath mailpath path
 # Set the list of directories that Zsh searches for programs.
 path=(
   /usr/local/{bin,sbin}
+  /Applications/Postgres.app/Contents/Versions/latest/bin
+  $GOPATH
+  $GOROOT
   $path
 )
 
