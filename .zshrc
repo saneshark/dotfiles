@@ -6,5 +6,3 @@ fi
 if [ -f ~/.zaliases ]; then
   source ~/.zaliases
 fi
-
-source $(brew --prefix nvm)/nvm.sh

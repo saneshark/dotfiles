@@ -1,19 +1,11 @@
 #exports
-export EXCLUDE_SIDEKIQ_ENTERPRISE=true
 
 alias ls='ls -G'
 alias grep='grep --color=auto'
-alias zshrc='atom -n ~/.zshrc'
-alias exports='atom -n ~/.zprofile'
-alias aliases='atom -n ~/.zaliases'
+alias zshrc='subl -n ~/.zshrc'
+alias exports='subl -n ~/.zprofile'
+alias aliases='subl -n ~/.zaliases'
 alias reload='source ~/.zshrc'
-#possibly replace with 'brew services start redis'
-alias load_redis='redis-server /usr/local/etc/redis.conf'
 alias be='bundle exec'
 alias ber='bundle exec rspec'
 alias randimg='convert -size 5x5 xc:gray +noise random'
-alias vets='cd ~/va/vets-api && pwd'
-alias vetsw='cd ~/va/vets-website && pwd'
-alias va='cd ~/va && pwd'
-alias sshprod='pkill -f ec2-52-222-38-230; ssh dsva@ec2-52-222-38-230.us-gov-west-1.compute.amazonaws.com -D 2001 -N'
-alias staginghosts='AWS_PROFILE=default AWS_DEFAULT_REGION=us-gov-west-1 ./VA/devops/utilities/aws_hosts.rb staging'
