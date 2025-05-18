@@ -2,9 +2,9 @@
 
 alias ls='ls -G'
 alias grep='grep --color=auto'
-alias zshrc='subl -n ~/.zshrc'
-alias exports='subl -n ~/.zprofile'
-alias aliases='subl -n ~/.zaliases'
+alias zshrc='cursor ~/.zshrc'
+alias exports='cursor ~/.zprofile'
+alias aliases='cursor ~/.zaliases'
 alias reload='source ~/.zshrc'
 alias be='bundle exec'
 alias ber='bundle exec rspec'
