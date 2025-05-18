@@ -1,29 +1,85 @@
 # Dotfiles
 
-Dotfiles, install scripts, and more...
+My personal dotfiles and development environment setup for macOS.
 
-## How to use
+## Features
 
-# Brew : The missing package manager for macOS
-# https://brew.sh/
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+- Zsh with Prezto for a better shell experience
+- Ruby development environment with chruby
+- Cursor as the primary code editor
+- Git configuration
+- Custom aliases and environment variables
 
-# Sublimte Text: text editor with multi line select
-brew install --cask sublime-text
+## Installation
 
-# Prezto: A better way to zsh
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+### Automatic Installation
 
-# VS Code: Basic IDE
-brew install --cask visual-studio-code
+The easiest way to set up everything is to run the installation script:
 
+```bash
+git clone https://github.com/yourusername/dotfiles.git ~/Projects/dotfiles
+cd ~/Projects/dotfiles
+./install.sh
+```
 
-# iterm: better terminal emulator
-brew cask install iterm3
+This script will:
+1. Install Xcode Command Line Tools
+2. Install and configure Homebrew
+3. Install essential development tools
+4. Set up Ruby with chruby
+5. Install and configure Prezto
+6. Install Cursor
+7. Set up all dotfiles with proper symlinks
 
+### Manual Installation
 
-See install.sh
-Currently just supports zsh with Prezto
+If you prefer to install components manually:
 
-Looking to add additional configuration to support installing
-brew, rbenv, ruby, etc
+1. Install Xcode Command Line Tools:
+   ```bash
+   xcode-select --install
+   ```
+
+2. Install Homebrew:
+   ```bash
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   ```
+
+3. Install essential packages:
+   ```bash
+   brew install git chruby ruby-install zsh zsh-completions zsh-syntax-highlighting
+   ```
+
+4. Install Prezto:
+   ```bash
+   git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+   ```
+
+5. Install Cursor:
+   ```bash
+   brew install --cask cursor
+   ```
+
+## Structure
+
+- `.zshrc` - Main shell configuration
+- `.zaliases` - Custom shell aliases
+- `.zprofile` - Shell profile settings
+- `.zexports` - Environment variables
+- `install.sh` - Installation script
+- `.gitignore` - Git ignore rules
+
+## Customization
+
+After installation, you can customize your environment by:
+
+1. Editing the dotfiles in `~/Projects/dotfiles`
+2. Running `reload` to apply changes to your current shell session
+
+## Contributing
+
+Feel free to fork this repository and customize it for your own use.
+
+## License
+
+This project is open source and available under the MIT License.
